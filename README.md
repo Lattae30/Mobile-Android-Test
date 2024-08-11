@@ -1,5 +1,5 @@
 # About Project
-Mobile-Android-Test is a project for fulfilling the internship requirement recruitment process as the Suitmedia Mobile Developer Intern.
+Mobile-Android-Test is a project for fulfilling the internship requirement recruitment process.
 
 ## First Screen
 
