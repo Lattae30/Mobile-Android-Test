@@ -1,5 +1,5 @@
 # About Project
-Mobile-Android-Test is a project for fulfilling the internship requirement recruitment process.
+Mobile-Android-Test is a project made to fulfill the internship requirement recruitment process. This project was built using Kotlin and Retrofit Library.
 
 ## First Screen
 
