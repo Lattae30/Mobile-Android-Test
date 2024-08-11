@@ -61,15 +61,6 @@ class ThirdActivity : AppCompatActivity() {
             adapter.submitData(lifecycle, pagingData)
         }
 
-        binding?.swipeRefreshLayout?.setOnRefreshListener {
-            adapter.refresh()
-            binding?.swipeRefreshLayout?.isRefreshing = false
-
-            viewModel.getUsers().observe(this) { pagingData ->
-                adapter.submitData(lifecycle, pagingData)
-            }
-        }
-
         adapter.addLoadStateListener { loadState ->
             showLoading(binding!!.progressBar, loadState.source.refresh is LoadState.Loading)
         }
