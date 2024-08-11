@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    tools:context=".ui.FirstActivity.FirstActivity"
+    android:background="@drawable/img_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAddProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profile"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/ic_profile"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddProfile">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/palindromeTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/nameTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/nameTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/palindromeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="@string/palindrome"
+            android:inputType="text"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCheckPalindrome"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/check"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/palindromeTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/palindromeTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/palindromeTextLayout" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/next"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheckPalindrome"
+        app:layout_constraintStart_toStartOf="@+id/btnCheckPalindrome"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckPalindrome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
